@@ -1,0 +1,76 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/drivers":
+    get:
+      summary: list drivers
+      responses:
+        '200':
+          description: successful
+  "/drivers/{id}/card_details":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: card_details list
+      responses:
+        '200':
+          description: successful
+  "/drivers/{id}/add_order":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    post:
+      summary: Creates a order
+      parameters: []
+      responses:
+        '200':
+          description: order created
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                amount:
+                  type: integer
+                description:
+                  type: string
+                payment_type:
+                  type: integer
+  "/drivers/{id}/add_wallet_history":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    post:
+      summary: Creates a wallet history
+      parameters: []
+      responses:
+        '200':
+          description: wallet_history created
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties: {}
+servers:
+- url: http://{defaultHost}
+  variables:
+    defaultHost:
+      default: localhost:3000/api/v1

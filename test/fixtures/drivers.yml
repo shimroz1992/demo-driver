@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  address: MyText
+  licence_d: MyString
+  date_of_birth: 2022-08-17 14:20:58
+  user: one
+
+two:
+  name: MyString
+  address: MyText
+  licence_d: MyString
+  date_of_birth: 2022-08-17 14:20:58
+  user: two

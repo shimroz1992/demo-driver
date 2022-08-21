@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @pay_later %>
+
+<div>
+  <%= link_to "Edit this pay later", edit_pay_later_path(@pay_later) %> |
+  <%= link_to "Back to pay laters", pay_laters_path %>
+
+  <%= button_to "Destroy this pay later", @pay_later, method: :delete %>
+</div>
