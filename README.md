@@ -5,6 +5,7 @@
 ```bash
 git clone https://github.com/shimroz1992/demo-driver.git
 cd demo-driver
+
 ```
 
 ### Check your Ruby version
@@ -23,10 +24,10 @@ rvm install "ruby-3.1.2"
 
 ### Install dependencies
 
-Using [Bundler](https://github.com/bundler/bundler) and [Yarn](https://github.com/yarnpkg/yarn):
+Using [Bundler](https://github.com/bundler/bundler):
 
 ```bash
-bundle && yarn
+bundle
 ```
 
 ### Update database.yml file
@@ -52,3 +53,10 @@ run below command
 ```bash
 rake rswag:specs:swaggerize 
 ```
+
+**Demo**
+
+
+
+https://user-images.githubusercontent.com/16288470/185866107-d53c29a0-d8a3-4566-8ff9-81670c500e88.mp4
+
