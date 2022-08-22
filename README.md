@@ -44,3 +44,11 @@ rails db:create db:migrate db:seed
 rails s
 ```
 And now you can visit the site with the URL http://localhost:3000/api-docs/index.html
+
+### Additonal Info
+if you create changes in spec folder
+run below command
+
+```bash
+rake rswag:specs:swaggerize 
+```
